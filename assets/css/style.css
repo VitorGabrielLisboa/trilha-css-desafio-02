@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background: #F9F9F9;
+    margin-bottom: 30px;
+}
+
+nav{
+    background: #fff;
+    width: 100%;
+    height: 56px;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo{
+    width: 170px;
+    height: 30px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logo i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    background: #fff;
+    border-radius: 50%;
+    height: 40px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+nav .logo img{
+    align-self: center;
+    width: 120px;
+}
+nav .wrap{
+    width: 450px;
+    display: flex;
+}
+
+nav .wrap .search-bar{
+    height: 40px;
+    position: relative;
+    border: none;
+    font-size: 1.2rem;
+}
+
+nav .wrap .search-bar input{
+    width: 484px;
+    height: inherit;
+    border: none;
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+    outline: none;  
+    padding-left: 10px;
+    font-size: 1.2rem;
+    color: #888;
+}
+nav .wrap .search-bar input:focus{
+    border: 1px solid #FF863B;
+}
+nav .wrap .search-bar input:focus + label,
+nav .wrap .search-bar input:valid + label{
+    display: none;
+}
+nav .wrap .search-bar label{
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50px;
+    color: #888;
+}
+nav .wrap .search-bar #key{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    right: 60px;
+
+}
+nav i{
+    transition: all .3s ease;
+}
+nav i:hover{
+    filter: brightness(90%);
+}
+nav .wrap .search-bar #glass{   
+    width: 60px;
+    height: 40px;
+    background: #f8f8f8;
+    border-radius: 0 10px 10px 0;
+    border: 1px solid #f8f8f8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: -2px;
+    top: 0;
+    cursor: pointer;
+    color: #111;
+}
+nav .wrap span{
+    margin-left: 20px;
+    font-size: 1.2rem;
+}
+nav .wrap span i{
+    display: flex;
+    background: #f8f8f8;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #111;
+    cursor: pointer;
+}
+nav .perfil-box{
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+.perfil-box i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.perfil-box i:hover{
+    filter: brightness(90%);
+}
+
+nav .perfil-box img{
+    width: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+main{
+    position: relative;
+    top: 16px;
+    display: flex;
+    gap: 40px;
+}
+
+main .video-box{
+    position: inherit;
+    left: 60px;
+    width: 1000px;
+    height: 480px;
+    margin-right: 40px;
+}
+main .video-box .video-text{
+    margin: 5px 0;
+}
+main .video-box .video-text .titulo{
+    width: inherit;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23.44px;
+}
+
+main .video-box .video-text .data-wrap{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    
+}
+main .video-box .video-text .data-wrap .channel{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+main .video-box .video-text .data-wrap .channel button{
+    width: 170px;
+    height: 40px;
+    outline: none;
+    background: #FF863B;
+    border: 1px solid #FF863B;
+    border-radius: 10px;
+    margin-left: 40px;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 600px;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+}
+main .channel button:hover{
+    filter: brightness(90%);  
+}
+main .video-box .video-text .data-wrap .channel .channel-text{
+    width: 120px;
+}
+main .channel-text .name{
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+main .channel-text .subs{
+    font-size: 12px;
+}
+main .video-box .video-text .data-wrap .channel img{
+    border-radius: 50%;
+    cursor: pointer;
+}
+main .video-box .video-text .data-wrap .actions-wrap{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+main .video-box .video-text .data-wrap .actions-wrap button{
+    display: flex;
+    align-items: center;
+    margin: 0px;
+    float: left;
+    height: 36px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: all .3s ease;
+
+}
+main .video-box .video-text .data-wrap .actions-wrap button .quant{
+    padding-left: 5px; 
+    font-size: 12px;
+    font-weight: 600;
+}
+main .video-box .video-text .data-wrap .actions-wrap button:hover{
+    filter: brightness(90%);
+}
+main .video-box .video-text .data-wrap .actions-wrap .like{
+    width: 98px;
+    height: 36px;
+    padding-left: 15px;
+    border: none;
+    outline: none;
+    border-radius: 10px 0 0 10px;
+    transition: all .2s ease;
+}
+main .video-box .video-text .data-wrap .actions-wrap .deslike{
+    width: 52px;
+    justify-content: center;
+    border-left: solid 1px #e1e1e1;
+    border-radius: 0 10px 10px 0;
+    transition: all .2s ease;
+
+}
+.share-btn{
+    width: 140px;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+.more{
+    width: 36px;
+    width: 36px;
+    justify-content: center;
+    border-radius: 50%;
+}
+.video-about{
+    width: inherit;
+    height: 80px;
+    overflow: hidden;
+    background: #e4e4e4;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    font-weight: 400;
+    transition: all .3s ease;
+}
+.video-about.active{
+    height: auto;
+}
+.video-about .views{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+#readMore{
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+main aside{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 426px;
+}
+main .video-box iframe{
+    width: 100%;
+    height: 532px;
+}
+main aside .video-wrap{
+    display: flex;
+    gap: 10px;
+    
+}
+main aside .video-wrap img{
+    width: 168px;
+}
+
+main aside .video-wrap .video-info{
+    width: 202px;
+    display: flex;
+    flex-direction: column;
+}
+
+main aside .video-wrap .video-info .vid-name{
+    font-size: 14px;
+    margin: 0 0 0 4px;
+    font-weight: 600;
+    line-height: 17px;
+}
+
+main aside .video-wrap .video-info .channel-name{
+    padding: 10px 0 5px 0;
+}
+main aside .video-wrap .video-info .channel-name,
+main aside .video-wrap .video-info .views{
+    font-size: 12px;
+    line-height: 14.06px;
+    margin: 0 0 0 4px;
+    color: #515151;
+    font-weight: 400;
+}
+.like.active,
+.deslike.active{
+    color: #FF863B;
+
+}
+
