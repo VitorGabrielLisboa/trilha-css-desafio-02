@@ -28,7 +28,7 @@ readMore.onclick = () =>{
 
 button.onclick = () => {
     if(input.value.trim()){
-        window.location.href = '../../wrong.html'
+        window.location.href = '../wrong.html'
     }
 }
     
